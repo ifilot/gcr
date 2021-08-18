@@ -1,3 +1,4 @@
 theme: jekyll-theme-slate
 title: Gameboy Cartridge Reader
 description: Graphical User Interface for the Gameboy Cartridge Reader Board
+latest_release: https://github.com/ifilot/gbr/releases/download/v.0.7.0.0/gcr_installer_win64_v0.7.0.exe
