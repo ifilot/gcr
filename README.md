@@ -6,8 +6,16 @@ The Gameboy Cartridge Reader is a GUI for interfacing with the Gameboy Cartridge
 
 ### Gameboy Cartridge Reader
 
+The Gameboy Cartridge Reader (GCR), is a program for interfacing with the Gameboy Cartridge Reader Board (GCRB), a USB device for retrieving data from Gameboy and Gameboy Color cartridges. Using this program and the board, you can
+
+* Extract the ROM data from a gameboy cartridge and run the game in an emulator.
+* Make a backup of your savegame and restore such a backup at a later stage. This also means copying your savegame to an emulator and putting it back on the cartridge.
+* Flashing a writable cartridge (32kb only). This allows you to write your own game or program and try it out on actual hardware.
+
 ![Gameboy Cartridge Reader Board](img/screenshot_gcr_v0_7.PNG)
 
 ### Gameboy Cartridge Reader Board
 
-![Gameboy Cartridge Reader Board](img/hardware_explained.jpg)
+The various components present on the GCRB are shown in the image below. The board uses a Atmega 32u4 microprocessor running at 16 MHz. You can connect the board to your computer using a Micro USB cable. The cartridge is slotted at the bottom in the cartridge port. When the board is powered via USB, the green LED at the left-top corner is on. The other status LEDs show you a visual indication on what the board is doing. Using a 12-bit binary counter, addresses can be put on the address bus and with the use of a few control lines, data can be fed or read from the Gameboy cartridge. You can communicate with the microprocessor using a serial interface which is visible on your computer as a virtual COM port. The GCR program shipped that accompanies the board sends instructions to the GCRB using a series of 8-byte commands and collects the response. This process is embedded in graphical user interface (GUI) allowing for easy and fast operation.
+
+![Gameboy Cartridge Reader Board](img/gameboy_cartridge_reader_board_hardware.png)
