@@ -19,3 +19,22 @@ The Gameboy Cartridge Reader (GCR), is a program for interfacing with the Gamebo
 The various components present on the GCRB are shown in the image below. The board uses a Atmega 32u4 microprocessor running at 16 MHz. You can connect the board to your computer using a Micro USB cable. The cartridge is slotted at the bottom in the cartridge port. When the board is powered via USB, the green LED at the left-top corner is on. The other status LEDs show you a visual indication on what the board is doing. Using a 12-bit binary counter, addresses can be put on the address bus and with the use of a few control lines, data can be fed or read from the Gameboy cartridge. You can communicate with the microprocessor using a serial interface which is visible on your computer as a virtual COM port. The GCR program shipped that accompanies the board sends instructions to the GCRB using a series of 8-byte commands and collects the response. This process is embedded in graphical user interface (GUI) allowing for easy and fast operation.
 
 ![Gameboy Cartridge Reader Board](img/gameboy_cartridge_reader_board_hardware.png)
+
+### Getting started
+
+Detailed documentation on how to operate the GCRB is bundled with the GCR program. Simply hit F1 (or select 'Help Contents' from the 'Help' menu).
+
+### Troubleshooting
+
+**No serial port can be found**
+
+This is a relatively complicated problem to debug. You can try a couple of things:
+* Try a different USB port
+* Try a different USB cable
+* Ensure that the GCRB is connected directly to the computer and not via a USB hub
+
+If the problem persists, please contact the vendor for a solution.
+
+**The serial port is being recognized and displayed in Device Manager, yet I cannot interface with the GCR**
+
+This problem has been identified for one of the insider builds of Windows. The solution is to set Windows 8 compatibility mode for GCR.exe which resolves the issue. (thanks to Donny for contributing to this solution)
