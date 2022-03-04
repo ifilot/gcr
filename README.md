@@ -2,7 +2,7 @@
 
 The Gameboy Cartridge Reader is a GUI for interfacing with the Gameboy Cartridge Reader Board; a simple hardware tool to read and write to Gameboy and Gameboy Color Cartridges.
 
-<i class="fa fa-file-download"></i> [Download the latest version from here](https://github.com/ifilot/gcr/releases/download/v.0.9.0/gcr_installer_win64_v0.9.0.zip).
+<i class="fa fa-file-download"></i> [Download the latest version from here](https://github.com/ifilot/gcr/releases/download/v.0.10.0/gcr_installer_win64_v0.10.0.zip).
 
 ### Gameboy Cartridge Reader
 
@@ -12,7 +12,7 @@ The Gameboy Cartridge Reader (GCR), is a program for interfacing with the Gamebo
 * Make a backup of your savegame and restore such a backup at a later stage. This also means copying your savegame to an emulator and putting it back on the cartridge.
 * Flashing a writable cartridge (32kb only). This allows you to write your own game or program and try it out on actual hardware.
 
-![Gameboy Cartridge Reader Board](img/screenshot_gcr_v0_7.PNG)
+![Gameboy Cartridge Reader Board](img/screenshot_gcr_v0_10.PNG)
 
 ### Gameboy Cartridge Reader Board
 
